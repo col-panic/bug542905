@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bug542905
+Bundle-SymbolicName: at.descher.bug542905
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: descher.at
+Automatic-Module-Name: at.descher.bug542905
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

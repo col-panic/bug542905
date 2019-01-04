@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: at.descher.bug542905.test
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: at.descher.bug542905;bundle-version="1.0.0"
+Automatic-Module-Name: at.descher.bug542905.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit;bundle-version="4.12.0"
