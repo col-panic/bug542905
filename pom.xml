@@ -9,7 +9,7 @@
 	<name>Bug542905</name>
 
 	<properties>
-		<tycho-version>1.3.0</tycho-version>
+		<tycho-version>1.4.0-SNAPSHOT</tycho-version>
 	</properties>
 
 	<repositories>
@@ -18,6 +18,11 @@
 			<id>2018-12</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/2018-12</url>
+		</repository>
+		<repository>
+			<id>internal</id>
+			<layout>p2</layout>
+			<url>http://download.elexis.info/elexis-server/elexis-server-dependencies/</url>
 		</repository>
 	</repositories>
 
@@ -37,6 +42,15 @@
 				<configuration>
 					<!-- recommended: use p2-based target platform resolver -->
 					<resolver>p2</resolver>
+					<dependency-resolution>
+						<extraRequirements>
+							<requirement>
+								<type>eclipse-plugin</type>
+								<id>jaxb-api</id>
+								<versionRange>0.0.0</versionRange>
+							</requirement>
+						</extraRequirements>
+					</dependency-resolution>
 				</configuration>
 			</plugin>
 		</plugins>
